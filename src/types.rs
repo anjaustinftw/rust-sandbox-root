@@ -1,4 +1,5 @@
 // Data Types in Rust : https://doc.rust-lang.org/book/ch03-02-data-types.html#:~:text=Rust%20has%20two%20primitive%20compound%20types%3A%20tuples%20and%20arrays.
+// bits & bytes
 // bool : The boolean type.
 // char : A character type.
 // int
@@ -50,13 +51,19 @@ pub fn run() {
     let is_active = true; // inferred type boolean
     let is_greater: bool = 10 > 5; // explicit type boolean will evaluate for true
 
-    println!("{:?}", (x, y, z, is_active, is_greater));
+    // Character type `char`
+    let a1a  = 'a';
+    let face = '\u{1F600}';
+
+    println!("{:?}", (x, y, z, is_active, is_greater, a1a, face));
 
     print_type_of(&x);
     print_type_of(&y);
     print_type_of(&z);
     print_type_of(&is_active);
     print_type_of(&is_greater);
+    print_type_of(&a1a);
+    print_type_of(&face);
 
     // Function to print variable type
     // SOURCE: https://stackoverflow.com/questions/21747136/how-do-i-print-the-type-of-a-variable-in-rust
