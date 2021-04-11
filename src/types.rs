@@ -22,7 +22,22 @@
 // str : String slices.
 // tuple : A finite heterogeneous sequence, (T, U, ..).
 
+// Rust is a statically typed language, but it does have the ability to infer types.
+// Do the work for the compiler when you can.
+
 pub fn run() {
 
+    // Default is "i32"
+    let _x = 1; // `_` silences `#[warn(unused_variables)]` at `cargo run`
+
+    // Default is "f64"
+    let _y = 2.5;
+
+    // Add explicit type
+    let _z: i64 = 445445445445;
+
+    // Find max size
+    println!("Max i32: {}.", std::i32::MAX);
+    println!("Max i64: {}.", std::i64::MAX);
 
 }
