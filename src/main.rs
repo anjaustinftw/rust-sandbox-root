@@ -2,11 +2,13 @@
 // Type './target\\debug\\sandbox' to run compiled executable
 
 // Required Files
-mod print;
+// mod print;
+mod vars;
 
 // FRONTDOOR
 fn main() {
 
-    print::run();
+    // print::run();
+    vars::run();
 
 }
