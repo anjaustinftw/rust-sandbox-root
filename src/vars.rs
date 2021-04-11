@@ -5,13 +5,13 @@
 pub fn run() {
 
     let name = "Aaron";
-    let mut age  = 37;  // `mut` allows us to change the value of
-                        // `age` downstream of its original
-                        // initialization. Its use here wil cause
-                        // the compiler to throw up a warning,
-                        // because the value of `age` is not
-                        // modified after its original init.
-                        // Yet, the code will compile and run. 
+    let /*mut*/ age  = 37;  // `mut` allows us to change the value of
+                            // `age` downstream of its original
+                            // initialization. Its use here wil cause
+                            // the compiler to throw up a warning,
+                            // because the value of `age` is not
+                            // modified after its original init.
+                            // Yet, the code will compile and run. 
 
     println!("My name is {} and my age is {}.", name, age);
 
