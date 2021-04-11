@@ -35,14 +35,34 @@ pub fn run() {
 
     // Add explicit type
     let z: i64 = 445445445445;
+    let i32_min: i32 = std::i32::MIN;
+    let i64_min: i64 = std::i64::MIN;
+    let i32_max: i32 = std::i32::MAX;
+    let i64_max: i64 = std::i64::MAX;
 
     // Find max size
-    println!("Max i32: {}.", std::i32::MAX);
-    println!("Max i64: {}.", std::i64::MAX);
+    println!("Min i32: {}.", i32_min);
+    println!("Min i64: {}.", i64_min);
+    println!("Max i32: {}.", i32_max);
+    println!("Max i64: {}.", i64_max);
 
     // Boolean
-    // let is_active = true; // inferred type boolean
-    let is_active: bool = true; // explicit type boolean
-    println!("{:?}", (x, y, z, is_active));
+    let is_active = true; // inferred type boolean
+    let _is_active: bool = true; // explicit type boolean
+
+    println!("{:?}", (x, y, z, is_active, _is_active));
+
+    print_type_of(&x);
+    print_type_of(&y);
+    print_type_of(&z);
+    print_type_of(&is_active);
+    print_type_of(&_is_active);
+
+    // Function to print variable type
+    // SOURCE: https://stackoverflow.com/questions/21747136/how-do-i-print-the-type-of-a-variable-in-rust
+    // 
+    fn print_type_of<T>(_: &T) {
+        println!("{}", std::any::type_name::<T>())
+    }
 
 }
