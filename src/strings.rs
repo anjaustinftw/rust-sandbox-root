@@ -23,4 +23,33 @@ pub fn run() {
 
     println!("{}{}\n{strl}:{stringl}", str_hello, string_hello, strl = str_hello.len(), stringl = string_hello.len());
 
+    // Get byte capacity
+    println!("Capacity: {} Bytes.", string_hello.capacity());
+
+    // Check emptiness
+    println!("String is empty: {}.", string_hello.is_empty());
+
+    // Contains
+    println!("Contains 'hello': {}", string_hello.contains("hello"));
+
+    // Replace
+    println!("Replace 'hello!' with 'there!': {str_greet}{string_greet}", str_greet = str_hello, string_greet = string_hello.replace("hello!", "there!"));
+
+    // Loop on whitespace in string
+    for word in string_hello.split_whitespace() {
+
+        println!("{}", word);
+    
+    }
+
+    let mut string_s = String::with_capacity(10);
+    string_s.push('a');
+    string_s.push('z');
+
+    println!("{}", string_s);
+
+    // Assertion testing
+    assert_eq!(2, string_s.len());
+    assert_eq!(10, string_s.capacity());
+
 }
