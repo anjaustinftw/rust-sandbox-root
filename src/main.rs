@@ -3,12 +3,14 @@
 
 // Required Files
 // mod print;
-mod vars;
+// mod vars;
+mod types;
 
 // FRONTDOOR
 fn main() {
 
     // print::run();
-    vars::run();
-
+    // vars::run();
+    types::run();
+    
 }
