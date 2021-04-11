@@ -48,15 +48,15 @@ pub fn run() {
 
     // Boolean
     let is_active = true; // inferred type boolean
-    let _is_active: bool = true; // explicit type boolean
+    let is_greater: bool = 10 > 5; // explicit type boolean will evaluate for true
 
-    println!("{:?}", (x, y, z, is_active, _is_active));
+    println!("{:?}", (x, y, z, is_active, is_greater));
 
     print_type_of(&x);
     print_type_of(&y);
     print_type_of(&z);
     print_type_of(&is_active);
-    print_type_of(&_is_active);
+    print_type_of(&is_greater);
 
     // Function to print variable type
     // SOURCE: https://stackoverflow.com/questions/21747136/how-do-i-print-the-type-of-a-variable-in-rust
