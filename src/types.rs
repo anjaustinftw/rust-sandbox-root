@@ -28,16 +28,21 @@
 pub fn run() {
 
     // Default is "i32"
-    let _x = 1; // `_` silences `#[warn(unused_variables)]` at `cargo run`
+    let x = 1; // `_x` silences `#[warn(unused_variables)]` at `cargo run` when variable is not in use
 
     // Default is "f64"
-    let _y = 2.5;
+    let y = 2.5;
 
     // Add explicit type
-    let _z: i64 = 445445445445;
+    let z: i64 = 445445445445;
 
     // Find max size
     println!("Max i32: {}.", std::i32::MAX);
     println!("Max i64: {}.", std::i64::MAX);
+
+    // Boolean
+    // let is_active = true; // inferred type boolean
+    let is_active: bool = true; // explicit type boolean
+    println!("{:?}", (x, y, z, is_active));
 
 }
