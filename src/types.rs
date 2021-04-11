@@ -27,10 +27,10 @@
 
 pub fn run() {
 
-    // Default is "i32"
+    // Default infers "i32"
     let x = 1; // `_x` silences `#[warn(unused_variables)]` at `cargo run` when variable is not in use
 
-    // Default is "f64"
+    // Default infers "f64"
     let y = 2.5;
 
     // Add explicit type
