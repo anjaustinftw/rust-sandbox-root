@@ -57,19 +57,20 @@ pub fn run() {
 
     println!("{:?}", (x, y, z, is_active, is_greater, a1a, face));
 
-    print_type_of(&x);
-    print_type_of(&y);
-    print_type_of(&z);
-    print_type_of(&is_active);
-    print_type_of(&is_greater);
-    print_type_of(&a1a);
-    print_type_of(&face);
+    print_type_of_tuple(&(x, y, z, is_active, is_greater, a1a, face));
 
     // Function to print variable type
     // SOURCE: https://stackoverflow.com/questions/21747136/how-do-i-print-the-type-of-a-variable-in-rust
     // 
-    fn print_type_of<T>(_: &T) {
-        println!("{}", std::any::type_name::<T>())
+    // fn print_type_of<T>(_: &T) {
+    //     println!("{}", std::any::type_name::<T>())
+    // }
+
+    // I figured out how to pass a tuple
+    // print_type_of_tuple(&(x, y, z, is_active, is_greater, a1a, face));
+    //
+    fn print_type_of_tuple<T>(_: &T) {
+        println!("{:?}", std::any::type_name::<T>())
     }
 
 }
