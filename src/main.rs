@@ -1,16 +1,20 @@
-// Type 'cargo run' to build and run main.rs
-// Type './target\\debug\\sandbox' to run compiled executable
+/*
+    Type 'cargo run' to build and run main.rs
+    Type './target\\debug\\sandbox' to run compiled executable
+*/
 
-// Required Files
+/* Required Files */
 // mod print;
 // mod vars;
-mod types;
+// mod types;
+mod strings;
 
-// FRONTDOOR
+/* FRONTDOOR */
 fn main() {
 
     // print::run();
     // vars::run();
-    types::run();
-    
+    // types::run();
+    strings::run();
+
 }
