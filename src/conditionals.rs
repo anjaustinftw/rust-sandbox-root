@@ -9,7 +9,7 @@ pub fn run() {
     let degrees:            Vec<u32>    = [0,180,90,270].to_vec();      // Declare Vector array and assign values for radial degrees
     
     let mut heading:        u32;                                        // Variable declaration
-    heading                             = 180;                            // Variable initialization
+    heading                             = 180;                          // Variable initialization
     let docked:             bool        = false;
     
     let going_up:           char        = cardinal[0];                  // Up is relative
