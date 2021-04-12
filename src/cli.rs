@@ -1,5 +1,5 @@
 /*
-
+    Use `std::env` from the standard library to collect arguments from the command line.
 
 */
 
