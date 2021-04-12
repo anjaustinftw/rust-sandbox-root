@@ -15,7 +15,8 @@
 // mod loops;
 // mod functions;
 // mod pointer_ref;
-mod structs;
+// mod structs;
+mod enums;
 
 /* FRONTDOOR */
 fn main() {
@@ -31,6 +32,7 @@ fn main() {
     // loops::run();
     // functions::run();
     // pointer_ref::run();
-    structs::run();
+    // structs::run();
+    enums::run();
 
 }
