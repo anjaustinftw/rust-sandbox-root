@@ -3,12 +3,13 @@
 
 */
 
-enum Movement {
-    // Variants (variations of behavior categorized as Movement)
+enum Movement {                                                     // Variants (variations of behavior categorized as Movement)
+    
     Up,
     Down,
     Right,
     Left
+    
 }
 
 fn move_avatar(m: Movement) {
